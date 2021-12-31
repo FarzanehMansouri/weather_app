@@ -1,0 +1,248 @@
+body,
+html {
+  height: 100%;
+  color: white;
+  font-family: "Noto Serif", serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background-color: white;
+}
+
+#magnifier {
+  width: 51px;
+  margin-top: 20px;
+}
+
+#location {
+  width: 42px;
+  margin-top: 20px;
+}
+
+.main-image {
+  width: 85%;
+}
+
+.bg-img {
+  /* The image used */
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-width input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0 40px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#selectedPlace {
+  border: 2px solid #a89d9d;
+  color: black;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.card {
+  background: border-box;
+}
+
+/* @-webkit-keyframes shaking-img {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+} */
+
+.card-img-top {
+  width: 90px;
+  height: 70px;
+  display: block;
+  margin: 5px auto;
+}
+
+/* .shaking-img:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+} */
+
+.card-body {
+  text-align: center;
+  color: #322828;
+  padding-top: 4px;
+}
+
+.card-title {
+  font-size: 17px;
+  color: #322828;
+  margin-bottom: 5px;
+}
+
+.card-text {
+  font-size: 13px;
+  color: #322828;
+}
+
+.illustarion {
+  width: 390px;
+  border-radius: 20px;
+}
+
+.card {
+  border: 0;
+}
+
+.cel:hover,
+.far:hover {
+  cursor: pointer;
+  color: rgb(50, 50, 148);
+}
+
+.card-title {
+  text-align: center;
+}
+
+.main-card {
+  text-align: center;
+}
+
+.main-card > .card-body > .card-title {
+  font-size: 45px;
+}
+
+.main-card > .card-body > .card-text {
+  font-size: 20px;
+}
+
+.main-card > .card-body > .image {
+  font-size: 200px;
+  display: block;
+}
+
+.degree {
+  font-size: 50px;
+}
+
+.cel,
+.far,
+.seprator {
+  font-size: 15px;
+  position: relative;
+  top: -23px;
+  left: 5px;
+}
+
+img.bg {
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px; /* 50% */
+  }
+}
+
+.glow {
+  color: rgb(59, 59, 59);
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0064e6,
+      0 0 40px #0064e6, 0 0 50px #0064e6, 0 0 60px #0064e6, 0 0 70px #0064e6;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #6fc2e9, 0 0 40px #6fc2e9,
+      0 0 50px #6fc2e9, 0 0 60px #6fc2e9, 0 0 70px #6fc2e9, 0 0 80px #6fc2e9;
+  }
+}
