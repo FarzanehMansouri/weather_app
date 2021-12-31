@@ -60,7 +60,7 @@ search_weather_form.addEventListener("submit",function(event){
   event.preventDefault();
   let city = document.querySelector("#selectedPlace").value;
   let apiKey = "350ba39f1ebe33ca73c995004955f157";
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   canl(url);
   
 });
@@ -70,7 +70,7 @@ magnifier_form.addEventListener("click",function(event){
   event.preventDefault();
   let city = document.querySelector("#selectedPlace").value;
   let apiKey = "350ba39f1ebe33ca73c995004955f157";
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   canl(url);
   
 });
@@ -82,7 +82,7 @@ location_form.addEventListener("click",function(event){
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
         let apiKey = "350ba39f1ebe33ca73c995004955f157";
-        let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
         canl(url);
       });  
 });
