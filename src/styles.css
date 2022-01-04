@@ -14,6 +14,10 @@ button {
   background-color: white;
 }
 
+a {
+  color: black;
+}
+
 #magnifier {
   width: 51px;
   margin-top: 20px;
@@ -22,6 +26,10 @@ button {
 #location {
   width: 42px;
   margin-top: 20px;
+}
+
+.github {
+  text-align: center;
 }
 
 .main-image {
