@@ -63,7 +63,7 @@ let search_weather_form = document.querySelector("#search_weather_form");
 search_weather_form.addEventListener("submit",function(event){
   event.preventDefault();
   let city = document.querySelector("#search-text").value;
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   canl(url);
   
 });
@@ -72,7 +72,7 @@ let magnifier_form = document.querySelector("#magnifier");
 magnifier_form.addEventListener("click",function(event){
   event.preventDefault();
   let city = document.querySelector("#search-text").value;
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   canl(url);
   
 });
@@ -83,12 +83,12 @@ location_form.addEventListener("click",function(event){
   navigator.geolocation.getCurrentPosition((position) => {
         let lat = position.coords.latitude;
         let lon = position.coords.longitude;
-        let url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
+        let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
         canl(url);
       });  
 });
 
-canl(`http://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`);
+canl(`https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`);
 
 let far = document.querySelector(".far");
 far.addEventListener("click",function(event){
