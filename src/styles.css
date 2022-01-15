@@ -20,7 +20,7 @@ img {
 
 /* ----------------  class   ------------------- */
 .today-weather-icon {
-  width: 200px;
+  width: 150px;
 }
 
 .card {
@@ -58,19 +58,39 @@ img {
   font-size: 25px;
 }
 
+.description::first-letter {
+  text-transform: uppercase;
+}
+
 .humidity,
 .wind {
   font-size: 20px;
 }
 
 .illustarion {
-  width: 390px;
+  width: 300px !important;
   border-radius: 20px;
 }
 
 .github {
   text-align: center;
   font-size: 14px;
+}
+
+.next-forcast {
+  margin-top: 20px;
+}
+
+.next-forcast > p {
+  text-align: center;
+}
+
+.next-forcast-image {
+  width: 80px;
+}
+
+.next-forcast-min {
+  opacity: 0.7;
 }
 
 .glow {
