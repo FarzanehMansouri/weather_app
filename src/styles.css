@@ -36,22 +36,11 @@ img {
   font-size: 50px;
 }
 
-.cel,
-.far,
-.seprator {
+.cel {
   font-size: 15px;
   position: relative;
   top: -23px;
   left: 5px;
-}
-
-.cel {
-  color: blue;
-  text-decoration: underline;
-}
-
-.far {
-  cursor: pointer;
 }
 
 .description {

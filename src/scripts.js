@@ -131,28 +131,6 @@ location_form.addEventListener("click",function(event){
 
 canl(`https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`);
 
-let far = document.querySelector(".far");
-far.addEventListener("click",function(event){
-  let degree = document.querySelector(".degree");
-  let degree_far = Math.round( temp *  9/5 + 32);
-  degree.innerHTML = degree_far;
-  document.querySelector(".far").style.textDecoration = "underline"; 
-  document.querySelector(".far").style.color = "blue";
-  document.querySelector(".far").style.cursor = "default";
-  document.querySelector(".cel").style.textDecoration = "none"; 
-  document.querySelector(".cel").style.color = "black";
-  document.querySelector(".cel").style.cursor = "pointer";
-});
 
-let cel = document.querySelector(".cel");
-cel.addEventListener("click",function(event){
-  let degree = document.querySelector(".degree");
-  degree.innerHTML = temp;
-  document.querySelector(".cel").style.textDecoration = "underline"; 
-  document.querySelector(".cel").style.color = "blue";
-  document.querySelector(".cel").style.cursor = "default";
-  document.querySelector(".far").style.textDecoration = "none"; 
-  document.querySelector(".far").style.color = "black";
-  document.querySelector(".far").style.cursor = "pointer";
-});
+
 
